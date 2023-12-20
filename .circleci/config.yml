@@ -2,6 +2,9 @@ version: 2.1
 
 jobs:
   build-and-test:
+    build:
+      only:
+        -master
     docker:
       - image: cimg/openjdk:19.0.1
     steps:
