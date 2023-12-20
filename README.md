@@ -70,14 +70,11 @@ The project includes comprehensive unit tests written using JUnit 5 to ensure th
 Use the provided `docker-compose.yml` file to run the application locally using Docker. Execute the following command:
 
 ```bash
-docker-compose up
+docker-compose up```
 
 ## Kubernetes Deployment
 
-Use:
 
-```bash
-docker-compose up
 
 
 
