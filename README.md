@@ -90,6 +90,7 @@ refer kubernetes_manifest.yaml for deplotment configuration
 ## Project Architechture
 
 ![arc](./bankingportal_architechture.png)
+```
 
 
 
