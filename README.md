@@ -74,6 +74,10 @@ docker-compose up```
 
 ## Kubernetes Deployment
 
+```bash
+use
+
+
 
 
 
