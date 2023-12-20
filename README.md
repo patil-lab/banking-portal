@@ -72,13 +72,14 @@ Use the provided `docker-compose.yml` file to run the application locally using 
 ```bash
 docker-compose up
 
-## Kubernetes Deployment
-kubernetes_manifest.yaml
+## Section 1
 
+Content of Section 1
 
-## CircleCI Pipeline
+## Section 2
 
-https://app.circleci.com/pipelines/circleci/DVjy7FwFwMjZx7RGBVbTxc/7HNZsV94t7bhZPR4hW761L/3/workflows/e4da9726-f0f1-41f7-9371-e260771cf02a/jobs/2 
+Content of Section 2
+
 
 
 
