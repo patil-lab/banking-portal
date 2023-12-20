@@ -72,9 +72,18 @@ Use the provided `docker-compose.yml` file to run the application locally using 
 ```bash
 docker-compose up
 
-# **Section 1**
+## Local Setup
 
-'''Content of Section 1
+1. Clone the repository: `git clone https://github.com/yourusername/banking-portal.git`
+2. Navigate to the project directory: `cd banking-portal`
+3. Run the application: `./mvnw spring-boot:run`
+
+## Docker Compose
+
+Use the provided `docker-compose.yml` file to run the application locally using Docker. Execute the following command:
+
+```bash
+docker-compose up
 
 
 
