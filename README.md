@@ -74,8 +74,12 @@ docker-compose up
 ```
 ## Kubernetes Deployment
 
-```bash
-use
+refer kubernetes_manifest.yaml for deplotment configuration
+
+## CircleCI Pipeline
+
+[Pieline Url]([https://github.com/yourusername/banking-portal](https://app.circleci.com/pipelines/circleci/DVjy7FwFwMjZx7RGBVbTxc/7HNZsV94t7bhZPR4hW761L/3/workflows/e4da9726-f0f1-41f7-9371-e260771cf02a/jobs/2 ))
+
 
 
 
