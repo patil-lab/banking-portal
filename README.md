@@ -13,6 +13,7 @@ Welcome to the Banking Portal, a secure and modern banking application built wit
 - [Kubernetes Deployment](#kubernetes-deployment)
 - [CircleCI Pipeline](#circleci-pipeline)
 - [Entity Relationship Diagram](#er-diagram)
+- [Project Architechture](#architechture)
 
 ## Features
 
@@ -84,7 +85,9 @@ refer kubernetes_manifest.yaml for deplotment configuration
 ## Entity Relationship Diagram
 ![ERD](./bankportal.png)
 
+## Project Architechture
 
+![arc](./bankingportal_architechture.png)
 
 
 
