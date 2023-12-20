@@ -72,7 +72,7 @@ Use the provided `docker-compose.yml` file to run the application locally using 
 ```bash
 docker-compose up
 
-## Section 1
+# **Section 1**
 
 '''Content of Section 1
 
