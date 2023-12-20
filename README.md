@@ -12,6 +12,7 @@ Welcome to the Banking Portal, a secure and modern banking application built wit
 - [Docker Compose](#docker-compose)
 - [Kubernetes Deployment](#kubernetes-deployment)
 - [CircleCI Pipeline](#circleci-pipeline)
+- [Entity Relationship Diagram](#er-diagram)
 
 ## Features
 
@@ -79,6 +80,10 @@ refer kubernetes_manifest.yaml for deplotment configuration
 ## CircleCI Pipeline
 
 [Pipeline URL](https://app.circleci.com/pipelines/circleci/DVjy7FwFwMjZx7RGBVbTxc/7HNZsV94t7bhZPR4hW761L/3/workflows/e4da9726-f0f1-41f7-9371-e260771cf02a/jobs/2)
+
+## Entity Relationship Diagram
+![Image Alt Text](./path/to/your/image.png)
+
 
 
 
