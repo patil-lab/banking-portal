@@ -84,7 +84,6 @@ refer kubernetes_manifest.yaml for deplotment configuration
 
 ## Entity Relationship Diagram
 
-```bash
 ![ERD](./bankportal.png)
 ```
 
