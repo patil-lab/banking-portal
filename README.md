@@ -86,11 +86,11 @@ refer kubernetes_manifest.yaml for deplotment configuration
 
 ![ERD](./bankportal.png)
 ```
+```
 
 ## Project Architechture
 
 ![ERD](./bankingportal_architechture.png)
-```
 
 
 
