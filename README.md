@@ -71,7 +71,7 @@ Use the provided `docker-compose.yml` file to run the application locally using 
 
 ```bash
 docker-compose up
-
+```
 ## Kubernetes Deployment
 
 ```bash
