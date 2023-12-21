@@ -3,12 +3,15 @@ package com.example.bankingportal.security;
 
 import com.example.bankingportal.constants.BankingServiceError;
 import com.example.bankingportal.exception.BankingServiceException;
+import com.example.bankingportal.service.DashBoardServiceImpl;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -32,6 +35,8 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
     @Value("${spring.application.name}")
     private String serviceName;
 
+    private final Logger LOGGER = LoggerFactory.getLogger(DashBoardServiceImpl.class);
+
 
     @Autowired
     public JWTAuthenticationFilter(CustomUserDetailsService userDetailsService, JWTTokenGenerator jwtTokenGenerator) {
@@ -53,15 +58,16 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
             try {
                 userId = this.jwtTokenGenerator.getUsernameFromToken(token);
             } catch (IllegalArgumentException e) {
-                System.out.println("Unable to get token");
+                LOGGER.error("UnAuthorized:Unable to get token");
             } catch (ExpiredJwtException e) {
-                System.out.println("JWT Token Expired");
+                LOGGER.error("UnAuthorized:Token Expired");
+
             } catch (MalformedJwtException e) {
-                System.out.println("Malformed JWT Token");
+                LOGGER.error("UnAuthorized:Malformed JWT Token");
             }
 
         } else {
-            System.out.println("JWT Token does not begin with Bearer String");
+            LOGGER.error("UnAuthorized:JWT Token does not begin with Bearer String");
         }
 
         if (userId != null ) {
