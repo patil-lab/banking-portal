@@ -22,7 +22,7 @@ Welcome to the Banking Portal, a secure and modern banking application built wit
 - Account Operations (Deposit, Withdrawal, Transfer)
 - User Details Retrieval
 - Transaction History
-- ...
+- Fetch Exchange rates from third party api
 
 ## Entities
 
@@ -30,32 +30,40 @@ Welcome to the Banking Portal, a secure and modern banking application built wit
 - Account
 - ExchangeRate
 - Transaction
+- VerficationToken
 
 ## APIs
 
 ### Authentication
 
-- `POST /api/register`: Register a new user.
-- `POST /api/login`: Authenticate and generate a token.
+- `POST /users/register`: Register a new user.
+- `POST /users/login`: Authenticate and generate a token.
 
 ### PIN Management
 
-- `POST /api/pin/create`: Create a new PIN.
-- `PUT /api/pin/update`: Update an existing PIN.
+- `POST /account/pin/create`: Create a new PIN.
+- `PUT /account/pin/update`: Update an existing PIN.
+- `GET /account/pin?accountNumber=0b0e86edd089`: Update an existing PIN.
+- `PATCH /account/pin/update`: Update an existing PIN.
 
 ### Account Operations
 
-- `POST /api/deposit`: Cash deposit to an account.
-- `POST /api/withdrawal`: Cash withdrawal from an account.
-- `POST /api/transfer`: Fund transfer between accounts.
+- `POST /account/deposit`: Cash deposit to an account.
+- `POST /account/withdrawal`: Cash withdrawal from an account.
+- `POST /account/transfer`: Fund transfer between accounts.
+- `POST account/{userId}?currencyType=INR`: create new account for user.
 
 ### User Details
 
-- `GET /api/user/details`: Retrieve user details.
+- `GET /users`: Retrieve user details.
 
 ### Transaction History
 
-- `GET /api/transactions`: Get all transactions.
+- `GET /dashboard/transactions?offset=0&pageSize=2&currency=VND`: Get all transactions of the loggedin user.
+
+### Exchange rates
+
+- `GET /exchange/fetch?baseCode=INR`: Get exhange rates from thrid party for given currency.
 
 ## Unit Tests
 
@@ -63,7 +71,7 @@ The project includes comprehensive unit tests written using JUnit 5 to ensure th
 
 ## Local Setup
 
-1. Clone the repository: `git clone https://github.com/yourusername/banking-portal.git`
+1. Clone the repository: `git clone https://github.com/patil-lab/banking-portal.git`
 2. Navigate to the project directory: `cd banking-portal`
 3. Run the application: `./mvnw spring-boot:run`
 
