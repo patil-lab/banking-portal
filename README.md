@@ -44,7 +44,7 @@ Welcome to the Banking Portal, a secure and modern banking application built wit
 - `POST /account/pin/create`: Create a new PIN.
 - `PUT /account/pin/update`: Update an existing PIN.
 - `GET /account/pin?accountNumber=0b0e86edd089`: Update an existing PIN.
-- `PATCH /account/pin/update`: Update an existing PIN.
+- `PATCH /account/pin`: Update an existing PIN.
 
 ### Account Operations
 
