@@ -29,8 +29,6 @@ public class User extends BaseEntity implements Serializable {
     private boolean isEmailVerified;
     private String address;
     private String phoneNumber;
-    private int otpRetryCount;
-    private LocalDateTime lastOtpRequestTime;
 
     // Establishing a one-to-one relationship with the account
     @OneToMany(mappedBy = "user")
@@ -71,13 +69,6 @@ public class User extends BaseEntity implements Serializable {
         this.token=token;
     }
 
-    public void setOtpRetryCount(int otpRetryCount) {
-        this.otpRetryCount = otpRetryCount;
-    }
-
-    public void setLastOtpRequestTime(LocalDateTime lastOtpRequestTime) {
-        this.lastOtpRequestTime = lastOtpRequestTime;
-    }
 
     public void setEmailVerified(boolean isEmailVerified){
         this.isEmailVerified=isEmailVerified;
