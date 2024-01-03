@@ -63,7 +63,7 @@ Welcome to the Banking Portal, a secure and modern banking application built wit
 
 ### Exchange rates
 
-- `GET /exchange/fetch?baseCode=INR`: Get exhange rates from thrid party for given currency.
+- `GET /exchange/fetch?baseCode=INR`: Get exchange rates from thrid party for given currency.
 
 ## Unit Tests
 
@@ -84,7 +84,7 @@ docker-compose up
 ```
 ## Kubernetes Deployment
 
-refer kubernetes_manifest.yaml for deplotment configuration
+refer kubernetes_manifest.yaml for deployment configuration
 
 ## CircleCI Pipeline
 
