@@ -68,6 +68,8 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
 
         } else {
             LOGGER.error("UnAuthorized:JWT Token does not begin with Bearer String");
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            response.setContentType("application/json");
         }
 
         if (userId != null ) {
